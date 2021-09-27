@@ -2,13 +2,14 @@
 
 namespace mcable\PageParse;
 
-use mcable\Pretty\Format;
+use mcable\PageParse\Format;
 
 class PageParse
 {
     public function __construct($url)
     {
         $this->pageContents = file_get_contents($url);
+        
     }
 
     
@@ -37,7 +38,7 @@ class PageParse
 
     private function pretty_page($html)
     {
-        $format = new Format();
+        $format = Format::class;
 
         $formatted_html = $format->HTML($html);
 
@@ -46,11 +47,12 @@ class PageParse
     
 }
 
-$url = "https://medium.com/docplanner-tech/cloud-based-docker-environment-how-to-speed-up-your-mac-based-development-setup-in-just-a-few-876f8f2505d3";
+$url = "https://www.omgubuntu.co.uk/2021/08/cutefish-os-ubuntu";
 $pageParse = new PageParse($url);
 
 $page = $pageParse->page_data();
 
 echo $page;
+
 
 

@@ -1,0 +1,21 @@
+{
+    "name": "mcable/pageparse.php",
+    "type": "library",
+    "description": "Your package description goes here",
+    "keywords": ["relevant","tags","go","here"],
+    "homepage": "https://yourcompany.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mason Cable",
+            "email": "mason.cable@protonmail.com",
+            "homepage": "http://seld.be",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PageParse\\": "src/"
+        }
+    }
+}

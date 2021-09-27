@@ -1,6 +1,6 @@
 <?php
 
-namespace mcable\Pretty\Format;
+namespace mcable\PageParse;
 
 
 class Format
